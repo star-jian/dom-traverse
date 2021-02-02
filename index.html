@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <style>
+        body{
+            margin: 1rem;
+        }
+        div{
+            display: flex;
+            margin: 0.5rem;
+            border-style: solid;
+            border-width: 5px;
+            border-color: grey;
+     
+        }
+        .grandparent{
+            width: 500px;
+            height: 500px;
+            display: flex;
+            margin: auto;
+            background-color: hsl(0, 50%, 50%);
+            flex-direction: column;
+        }
+        .parent{
+            background-color: hsl(100, 50%, 50%);
+            width: 80%;
+            height: 30%;
+            justify-content: space-evenly;
+            display: flex;
+            margin:auto;
+      
+        }
+        .child{
+            background-color: hsl(200, 50%, 50%);
+            width: 40%;
+            height:40%;
+            justify-content: center;
+            margin: auto;
+     
+        }
+    </style>
+    <title>JS DOM traverse</title>
+</head>
+<body>
+    <div class="grandparent" id="grandparent-id">
+        <div class="parent">
+            <div class="child" id="child-one"></div>
+            <div class="child"></div>
+        </div>
+        <div class="parent">
+            <div class="child"></div>
+            <div class="child"></div>
+        </div>
+    </div>
+    
+</body>
+</html>
