@@ -37,7 +37,7 @@ changeColor(hisgrandparent)
 // find siblings
 const child_two = child_one.nextElementSibling
 changeSingle(child_two)
-changeSingle(child_two.previousElementSibling) // back to child one
+changeSingle(child_two.previousElementSibling) // back to previous child 
 
 
 function changeColor(element){
